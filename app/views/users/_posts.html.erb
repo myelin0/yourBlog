@@ -1,0 +1,10 @@
+<% @user.recent_posts.each do |post| %>
+    <article class="user_page_post">
+        <span class="post_title"><%= post.title %></span>
+        <p class="post_text"> <%= post.text %> </p>
+        <div class="post_interactions">
+            <p>Comments: <%=post.CommentsCounter %></p> 
+            <p>, Likes: <%= post.LikesCounter %></p>
+        </div>
+    </article>
+<% end %>
