@@ -4,7 +4,7 @@ class Like < ApplicationRecord
 
   validates :user_id, presence: true, uniqueness: { scope: :post_id }
   validates :post_id, presence: true
-  
+
   after_save :update_like_counter
 
   # private

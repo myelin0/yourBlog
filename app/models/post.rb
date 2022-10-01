@@ -22,6 +22,6 @@ class Post < ApplicationRecord
 
   def update_post_counter
     # user.increment!(:PostsCounter)
-    user.update(PostsCounter:user.posts.count)
+    user.update(PostsCounter: user.posts.count)
   end
 end
