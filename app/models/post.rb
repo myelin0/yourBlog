@@ -5,8 +5,10 @@ class Post < ApplicationRecord
 
   validates :title, presence: true
   validates :title, length: { maximum: 250 }
-  validates :CommentsCounter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
-  validates :LikesCounter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
+  validates :CommentsCounter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 },
+                              allow_blank: true
+  validates :LikesCounter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 },
+                           allow_blank: true
 
   after_save :update_post_counter
   def recent_comments
