@@ -15,9 +15,13 @@ class Post < ApplicationRecord
     comments.limit(5).order(created_at: :desc)
   end
 
-  private
+  def liked?(user)
+    !!likes.find { |like| like.user_id == user.id }
+  end
+  # private
 
   def update_post_counter
-    user.increment!(:PostsCounter)
+    # user.increment!(:PostsCounter)
+    user.update(PostsCounter: user.posts.count)
   end
 end
