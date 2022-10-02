@@ -72,5 +72,6 @@ group :test do
   # gem 'webdrivers'
   gem 'rails-controller-testing'
 end
-
+gem 'kaminari'
+gem 'will_paginate', '~> 3.3'
 gem 'rubocop', '>= 1.0', '< 2.0'
