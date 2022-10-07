@@ -77,5 +77,6 @@ group :test do
   gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
 end
+gem 'bullet'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'rubocop', '>= 1.0', '< 2.0'
