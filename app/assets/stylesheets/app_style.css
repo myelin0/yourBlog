@@ -4,12 +4,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: green;
 }
+
+/* Navbar */
+.navbar {
+  /* overflow: hidden;
+  background-color: #333; */
+  display: flex;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: magenta;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar__links {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  height: 60px; /* should be the same as line-height */
+  line-height: 60px; /* should be the same as height */
+  padding: 0 40px; /* "0" sets top and bottom padding to none */
+}
+
+.navbar__link {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar__link:hover, {
+  background-color: red;
+}
+
+.sign-up-style,
+.log-in-style {
+  margin-top: 3rem;
+}
+
 
 /* User#index */
 .user_list {
   display: flex;
   flex-direction: column;
+  margin-top: 6rem;
 }
 
 .user_item_container {
